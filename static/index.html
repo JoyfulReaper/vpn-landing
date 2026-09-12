@@ -561,37 +561,54 @@
           </div>
         </section>
 
-        <!-- FREEBSD LAPTOP -->
+      <!-- FREEBSD LAPTOP -->
 
-        <section class="machine pending">
+      <section class="machine inventoried">
           <div class="machine-header">
-            <div>
-              <h2>FreeBSD Laptop VM</h2>
-              <span class="role">Laptop VM</span>
-            </div>
+              <div>
+                  <h2>FreeBSD Laptop VM</h2>
+                  <span class="role">Development / experimentation VM</span>
+              </div>
 
-            <span class="inventory-status">Pending</span>
+              <span class="inventory-status">Inventoried</span>
           </div>
 
           <div class="addresses">
-            <div>
-              <span class="label">WG IPv4</span>
-              <code>10.99.0.7</code>
-            </div>
+              <div>
+                  <span class="label">WG IPv4</span>
+                  <code>10.99.0.7</code>
+              </div>
 
-            <div>
-              <span class="label">WG IPv6</span>
-              <code>fd42:42:42::b5d:b10b</code>
-            </div>
+              <div>
+                  <span class="label">WG IPv6</span>
+                  <code>fd42:42:42::b5d:b10b</code>
+              </div>
 
-            <div>
-              <span class="label">Routed IPv6</span>
-              <code>2607:f2d8:8416:10c1::b5d:b10b</code>
-            </div>
+              <div>
+                  <span class="label">Routed IPv6</span>
+                  <code>2607:f2d8:8416:10c1::b5d:b10b</code>
+              </div>
           </div>
 
-          <p class="inventory-note">Inventory pending.</p>
-        </section>
+          <div class="service-group">
+              <h3>Remote Access</h3>
+
+              <div class="service-tags">
+                  <span>SSH :22</span>
+              </div>
+          </div>
+
+          <div class="service-group">
+              <h3>Infrastructure</h3>
+
+              <div class="service-tags">
+                  <span>WireGuard</span>
+                  <span>PF firewall</span>
+                  <span>syslog :514 UDP</span>
+                  <span>VirtualBox Guest</span>
+              </div>
+          </div>
+      </section>
 
         <!-- ARCH LAPTOP -->
 
