@@ -394,29 +394,36 @@
 
         <!-- ANDROID -->
 
-        <section class="machine pending">
-          <div class="machine-header">
-            <div>
-              <h2>Android Phone</h2>
-              <span class="role">Mobile WireGuard peer</span>
+        <section class="machine inventoried">
+            <div class="machine-header">
+                <div>
+                    <h2>Android Phone</h2>
+                    <span class="role">Mobile WireGuard peer</span>
+                </div>
+
+                <span class="inventory-status">Inventoried</span>
             </div>
 
-            <span class="inventory-status">Pending</span>
-          </div>
+            <div class="addresses">
+                <div>
+                    <span class="label">WG IPv4</span>
+                    <code>10.99.0.3</code>
+                </div>
 
-          <div class="addresses">
-            <div>
-              <span class="label">WG IPv4</span>
-              <code>10.99.0.3</code>
+                <div>
+                    <span class="label">WG IPv6</span>
+                    <code>fd42:42:42::ca11:ce11</code>
+                </div>
             </div>
 
-            <div>
-              <span class="label">WG IPv6</span>
-              <code>fd42:42:42::ca11:ce11</code>
-            </div>
-          </div>
+            <div class="service-group">
+                <h3>Purpose</h3>
 
-          <p class="inventory-note">No services inventoried yet.</p>
+                <div class="service-tags">
+                    <span>WireGuard client</span>
+                    <span>No hosted services</span>
+                </div>
+            </div>
         </section>
 
         <!-- FREEBSD WORKSTATION -->
@@ -695,7 +702,7 @@
               <h3>Remote Access</h3>
 
               <div class="service-tags">
-                  <span>SSH :22222</span>
+                  <span>SSH :22222 - VPN ONLY</span>
               </div>
           </div>
 
@@ -719,7 +726,7 @@
       </main>
 
       <footer>
-        11 WireGuard peers documented &middot; 8 currently inventoried
+        11 WireGuard peers documented &middot; 10 currently inventoried
       </footer>
     </div>
   </body>
