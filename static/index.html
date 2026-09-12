@@ -657,45 +657,65 @@
             </div>
         </section>
 
-        <!-- NOISEMAKER -->
+              <!-- NOISEMAKER -->
 
-        <section class="machine pending">
+      <section class="machine inventoried">
           <div class="machine-header">
-            <div>
-              <h2>Noisemaker</h2>
-              <span class="role">tcpnoise residential collector</span>
-            </div>
+              <div>
+                  <h2>Noisemaker</h2>
+                  <span class="role">tcpnoise residential collector</span>
+              </div>
 
-            <span class="inventory-status">Pending</span>
+              <span class="inventory-status">Inventoried</span>
           </div>
 
           <div class="addresses">
-            <div>
-              <span class="label">WG IPv4</span>
-              <code>10.99.0.12</code>
-            </div>
+              <div>
+                  <span class="label">WG IPv4</span>
+                  <code>10.99.0.12</code>
+              </div>
 
-            <div>
-              <span class="label">WG IPv6</span>
-              <code>fd42:42:42::12</code>
-            </div>
+              <div>
+                  <span class="label">WG IPv6</span>
+                  <code>fd42:42:42::12</code>
+              </div>
 
-            <div>
-              <span class="label">Routed IPv6</span>
-              <code>2607:f2d8:8416:10c1::12</code>
-            </div>
+              <div>
+                  <span class="label">LAN IPv4</span>
+                  <code>192.168.1.235</code>
+              </div>
+
+              <div>
+                  <span class="label">Routed IPv6</span>
+                  <code>2607:f2d8:8416:10c1::12</code>
+              </div>
           </div>
 
           <div class="service-group">
-            <h3>Known</h3>
+              <h3>Remote Access</h3>
 
-            <div class="service-tags">
-              <span>tcpnoise</span>
-            </div>
+              <div class="service-tags">
+                  <span>SSH :22222</span>
+              </div>
           </div>
 
-          <p class="inventory-note">Full inventory pending.</p>
-        </section>
+          <div class="service-group">
+              <h3>Services</h3>
+
+              <div class="service-tags">
+                  <span>tcpnoise</span>
+              </div>
+          </div>
+
+          <div class="service-group">
+              <h3>Infrastructure</h3>
+
+              <div class="service-tags">
+                  <span>WireGuard</span>
+                  <span>Hyper-V Guest</span>
+              </div>
+          </div>
+      </section>
       </main>
 
       <footer>
