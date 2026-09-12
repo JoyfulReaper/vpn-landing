@@ -470,14 +470,14 @@
 
         <!-- ARCH WORKSTATION -->
 
-        <section class="machine pending">
+        <section class="machine inventoried">
           <div class="machine-header">
             <div>
               <h2>Arch Workstation VM</h2>
-              <span class="role">Workstation VM</span>
+              <span class="role">Development / experimentation VM</span>
             </div>
 
-            <span class="inventory-status">Pending</span>
+            <span class="inventory-status">Inventoried</span>
           </div>
 
           <div class="addresses">
@@ -497,7 +497,41 @@
             </div>
           </div>
 
-          <p class="inventory-note">Inventory pending.</p>
+          <div class="service-group">
+            <h3>Remote Access</h3>
+
+            <div class="service-tags">
+              <span>SSH :22</span>
+              <span>VNC :5901</span>
+            </div>
+          </div>
+
+          <div class="service-group">
+            <h3>Services</h3>
+
+            <div class="service-tags">
+              <span>KDE Connect :1716</span>
+              <span>tcpnoise</span>
+            </div>
+          </div>
+
+          <div class="service-group">
+            <h3>tcpnoise Listeners</h3>
+
+            <div class="service-tags">
+              <span>:21</span>
+              <span>:23</span>
+              <span>:25</span>
+              <span>:80</span>
+              <span>:110</span>
+              <span>:143</span>
+              <span>:443</span>
+              <span>:445</span>
+              <span>:2323</span>
+              <span>:3389</span>
+              <span>:8080</span>
+            </div>
+          </div>
         </section>
 
         <!-- I5 LAPTOP -->
