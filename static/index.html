@@ -518,14 +518,14 @@
 
         <!-- I5 LAPTOP -->
 
-        <section class="machine pending">
+        <section class="machine inventoried">
           <div class="machine-header">
             <div>
               <h2>i5 Laptop</h2>
-              <span class="role">Windows laptop</span>
+              <span class="role">Windows laptop / development host</span>
             </div>
 
-            <span class="inventory-status">Pending</span>
+            <span class="inventory-status">Inventoried</span>
           </div>
 
           <div class="addresses">
@@ -540,12 +540,25 @@
             </div>
 
             <div>
+              <span class="label">LAN IPv4</span>
+              <code>192.168.1.3</code>
+            </div>
+
+            <div>
               <span class="label">Routed IPv6</span>
               <code>2607:f2d8:8416:10c1::5ad:b10b</code>
             </div>
           </div>
 
-          <p class="inventory-note">Inventory pending.</p>
+          <div class="service-group">
+            <h3>Services</h3>
+
+            <div class="service-tags">
+              <span>SMB</span>
+              <span>VirtualBox</span>
+              <span>Steam</span>
+            </div>
+          </div>
         </section>
 
         <!-- FREEBSD LAPTOP -->
@@ -654,7 +667,7 @@
       </main>
 
       <footer>
-        11 WireGuard peers documented &middot; 4 currently inventoried
+        11 WireGuard peers documented &middot; 7 currently inventoried
       </footer>
     </div>
   </body>
