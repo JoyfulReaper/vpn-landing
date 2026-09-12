@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN Network Portal</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --border: #334155;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0284c7;
+            --status-online: #22c55e;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 0.25rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Services Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+            padding: 1.25rem;
+            transition: transform 0.15s ease, border-color 0.15s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .card-desc {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .card-link {
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        /* Machines Table */
+        .table-container {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 0.875rem 1.25rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background-color: rgba(0, 0, 0, 0.2);
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .status-dot {
+            height: 8px;
+            width: 8px;
+            background-color: var(--status-online);
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 0.5rem;
+        }
+
+        code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.25rem;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>VPN Portal</h1>
+        <p class="subtitle">Internal Homelab Services & Device Directory</p>
+    </header>
+
+    <!-- Services Section -->
+    <section>
+        <h2>Internal Services</h2>
+        <div class="grid">
+            
+            <a href="http://10.0.0.2:80/admin" target="_blank" class="card">
+                <div>
+                    <div class="card-header">
+                        <span class="card-title">Pi-hole</span>
+                    </div>
+                    <p class="card-desc">DNS ad-blocking and Unbound upstream control.</p>
+                </div>
+                <span class="card-link">Open Pi-hole &rarr;</span>
+            </a>
+
+            <a href="http://10.0.0.2:3000" target="_blank" class="card">
+                <div>
+                    <div class="card-header">
+                        <span class="card-title">PairDrop</span>
+                    </div>
+                    <p class="card-desc">Local browser-to-browser P2P file sharing.</p>
+                </div>
+                <span class="card-link">Open PairDrop &rarr;</span>
+            </a>
+
+            <a href="http://10.0.0.3:20211" target="_blank" class="card">
+                <div>
+                    <div class="card-header">
+                        <span class="card-title">NetAlertX</span>
+                    </div>
+                    <p class="card-desc">Wi-Fi & LAN intrusion detection monitor.</p>
+                </div>
+                <span class="card-link">Open NetAlertX &rarr;</span>
+            </a>
+
+            <a href="http://10.0.0.3:5001" target="_blank" class="card">
+                <div>
+                    <div class="card-header">
+                        <span class="card-title">Dockge</span>
+                    </div>
+                    <p class="card-desc">Reactive Docker Compose stack manager.</p>
+                </div>
+                <span class="card-link">Open Dockge &rarr;</span>
+            </a>
+
+            <a href="http://10.0.0.4:8090" target="_blank" class="card">
+                <div>
+                    <div class="card-header">
+                        <span class="card-title">Beszel Hub</span>
+                    </div>
+                    <p class="card-desc">Lightweight server monitoring & metrics.</p>
+                </div>
+                <span class="card-link">Open Beszel &rarr;</span>
+            </a>
+
+            <a href="https://10.0.0.4:8443" target="_blank" class="card">
+                <div>
+                    <div class="card-header">
+                        <span class="card-title">Kasm Workspaces</span>
+                    </div>
+                    <p class="card-desc">On-demand browser streaming containers.</p>
+                </div>
+                <span class="card-link">Open Kasm &rarr;</span>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Machine List Section -->
+    <section>
+        <h2>VPN Hosts & Nodes</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Status</th>
+                        <th>Hostname / Role</th>
+                        <th>VPN IP</th>
+                        <th>OS / Environment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="status-dot"></span>Online</td>
+                        <td><strong>i3-Core-Host</strong> (DNS/Services)</td>
+                        <td><code>10.0.0.2</code></td>
+                        <td>Debian 12</td>
+                    </tr>
+                    <tr>
+                        <td><span class="status-dot"></span>Online</td>
+                        <td><strong>Debian-Docker-Host</strong> (Stack Node)</td>
+                        <td><code>10.0.0.3</code></td>
+                        <td>Debian 12</td>
+                    </tr>
+                    <tr>
+                        <td><span class="status-dot"></span>Online</td>
+                        <td><strong>VPS-Gateway</strong> (Remote Control)</td>
+                        <td><code>10.0.0.4</code></td>
+                        <td>Debian 12</td>
+                    </tr>
+                    <tr>
+                        <td><span class="status-dot"></span>Online</td>
+                        <td><strong>Windows-Workstation</strong></td>
+                        <td><code>10.0.0.5</code></td>
+                        <td>Windows 11</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</body>
+</html>
