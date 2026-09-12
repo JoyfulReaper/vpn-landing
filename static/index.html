@@ -395,35 +395,35 @@
         <!-- ANDROID -->
 
         <section class="machine inventoried">
-            <div class="machine-header">
-                <div>
-                    <h2>Android Phone</h2>
-                    <span class="role">Mobile WireGuard peer</span>
-                </div>
-
-                <span class="inventory-status">Inventoried</span>
+          <div class="machine-header">
+            <div>
+              <h2>Android Phone</h2>
+              <span class="role">Mobile WireGuard peer</span>
             </div>
 
-            <div class="addresses">
-                <div>
-                    <span class="label">WG IPv4</span>
-                    <code>10.99.0.3</code>
-                </div>
+            <span class="inventory-status">Inventoried</span>
+          </div>
 
-                <div>
-                    <span class="label">WG IPv6</span>
-                    <code>fd42:42:42::ca11:ce11</code>
-                </div>
+          <div class="addresses">
+            <div>
+              <span class="label">WG IPv4</span>
+              <code>10.99.0.3</code>
             </div>
 
-            <div class="service-group">
-                <h3>Purpose</h3>
-
-                <div class="service-tags">
-                    <span>WireGuard client</span>
-                    <span>No hosted services</span>
-                </div>
+            <div>
+              <span class="label">WG IPv6</span>
+              <code>fd42:42:42::ca11:ce11</code>
             </div>
+          </div>
+
+          <div class="service-group">
+            <h3>Purpose</h3>
+
+            <div class="service-tags">
+              <span>WireGuard client</span>
+              <span>No hosted services</span>
+            </div>
+          </div>
         </section>
 
         <!-- FREEBSD WORKSTATION -->
@@ -571,162 +571,220 @@
         <!-- FREEBSD LAPTOP -->
 
         <section class="machine inventoried">
-            <div class="machine-header">
-                <div>
-                    <h2>FreeBSD Laptop VM</h2>
-                    <span class="role">Development / experimentation VM</span>
-                </div>
-
-                <span class="inventory-status">Inventoried</span>
+          <div class="machine-header">
+            <div>
+              <h2>FreeBSD Laptop VM</h2>
+              <span class="role">Development / experimentation VM</span>
             </div>
 
-            <div class="addresses">
-                <div>
-                    <span class="label">WG IPv4</span>
-                    <code>10.99.0.7</code>
-                </div>
+            <span class="inventory-status">Inventoried</span>
+          </div>
 
-                <div>
-                    <span class="label">WG IPv6</span>
-                    <code>fd42:42:42::b5d:b10b</code>
-                </div>
-
-                <div>
-                    <span class="label">Routed IPv6</span>
-                    <code>2607:f2d8:8416:10c1::b5d:b10b</code>
-                </div>
+          <div class="addresses">
+            <div>
+              <span class="label">WG IPv4</span>
+              <code>10.99.0.7</code>
             </div>
 
-            <div class="service-group">
-                <h3>Remote Access</h3>
-
-                <div class="service-tags">
-                    <span>SSH :22 — VPN only</span>
-                </div>
+            <div>
+              <span class="label">WG IPv6</span>
+              <code>fd42:42:42::b5d:b10b</code>
             </div>
 
-            <div class="service-group">
-                <h3>Infrastructure</h3>
-
-                <div class="service-tags">
-                    <span>WireGuard</span>
-                    <span>PF firewall</span>
-                    <span>syslog :514 UDP — VPN only</span>
-                    <span>VirtualBox Guest</span>
-                </div>
+            <div>
+              <span class="label">Routed IPv6</span>
+              <code>2607:f2d8:8416:10c1::b5d:b10b</code>
             </div>
+          </div>
+
+          <div class="service-group">
+            <h3>Remote Access</h3>
+
+            <div class="service-tags">
+              <span>SSH :22 — VPN only</span>
+            </div>
+          </div>
+
+          <div class="service-group">
+            <h3>Infrastructure</h3>
+
+            <div class="service-tags">
+              <span>WireGuard</span>
+              <span>PF firewall</span>
+              <span>syslog :514 UDP — VPN only</span>
+              <span>VirtualBox Guest</span>
+            </div>
+          </div>
         </section>
 
         <!-- ARCH LAPTOP -->
 
         <section class="machine inventoried">
-            <div class="machine-header">
-                <div>
-                    <h2>Arch Laptop VM</h2>
-                    <span class="role">Development / experimentation VM</span>
-                </div>
-
-                <span class="inventory-status">Inventoried</span>
-            </div>
-
-            <div class="addresses">
-                <div>
-                    <span class="label">WG IPv4</span>
-                    <code>10.99.0.8</code>
-                </div>
-
-                <div>
-                    <span class="label">WG IPv6</span>
-                    <code>fd42:42:42::b10b</code>
-                </div>
-
-                <div>
-                    <span class="label">Routed IPv6</span>
-                    <code>2607:f2d8:8416:10c1::b10b</code>
-                </div>
-            </div>
-
-            <div class="service-group">
-                <h3>Remote Access</h3>
-
-                <div class="service-tags">
-                    <span>SSH :22 — VPN only</span>
-                </div>
-            </div>
-
-            <div class="service-group">
-                <h3>Infrastructure</h3>
-
-                <div class="service-tags">
-                    <span>WireGuard</span>
-                    <span>VirtualBox Guest</span>
-                </div>
-            </div>
-        </section>
-
-              <!-- NOISEMAKER -->
-
-      <section class="machine inventoried">
           <div class="machine-header">
-              <div>
-                  <h2>Noisemaker</h2>
-                  <span class="role">tcpnoise residential collector</span>
-              </div>
+            <div>
+              <h2>Arch Laptop VM</h2>
+              <span class="role">Development / experimentation VM</span>
+            </div>
 
-              <span class="inventory-status">Inventoried</span>
+            <span class="inventory-status">Inventoried</span>
           </div>
 
           <div class="addresses">
-              <div>
-                  <span class="label">WG IPv4</span>
-                  <code>10.99.0.12</code>
-              </div>
+            <div>
+              <span class="label">WG IPv4</span>
+              <code>10.99.0.8</code>
+            </div>
 
-              <div>
-                  <span class="label">WG IPv6</span>
-                  <code>fd42:42:42::12</code>
-              </div>
+            <div>
+              <span class="label">WG IPv6</span>
+              <code>fd42:42:42::b10b</code>
+            </div>
 
-              <div>
-                  <span class="label">LAN IPv4</span>
-                  <code>192.168.1.235</code>
-              </div>
-
-              <div>
-                  <span class="label">Routed IPv6</span>
-                  <code>2607:f2d8:8416:10c1::12</code>
-              </div>
+            <div>
+              <span class="label">Routed IPv6</span>
+              <code>2607:f2d8:8416:10c1::b10b</code>
+            </div>
           </div>
 
           <div class="service-group">
-              <h3>Remote Access</h3>
+            <h3>Remote Access</h3>
 
-              <div class="service-tags">
-                  <span>SSH :22222 - VPN ONLY</span>
-              </div>
+            <div class="service-tags">
+              <span>SSH :22 — VPN only</span>
+            </div>
           </div>
 
           <div class="service-group">
-              <h3>Services</h3>
+            <h3>Infrastructure</h3>
 
-              <div class="service-tags">
-                  <span>tcpnoise</span>
-              </div>
+            <div class="service-tags">
+              <span>WireGuard</span>
+              <span>VirtualBox Guest</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- NOISEMAKER -->
+
+        <section class="machine inventoried">
+          <div class="machine-header">
+            <div>
+              <h2>Noisemaker</h2>
+              <span class="role">tcpnoise residential collector</span>
+            </div>
+
+            <span class="inventory-status">Inventoried</span>
+          </div>
+
+          <div class="addresses">
+            <div>
+              <span class="label">WG IPv4</span>
+              <code>10.99.0.12</code>
+            </div>
+
+            <div>
+              <span class="label">WG IPv6</span>
+              <code>fd42:42:42::12</code>
+            </div>
+
+            <div>
+              <span class="label">LAN IPv4</span>
+              <code>192.168.1.235</code>
+            </div>
+
+            <div>
+              <span class="label">Routed IPv6</span>
+              <code>2607:f2d8:8416:10c1::12</code>
+            </div>
           </div>
 
           <div class="service-group">
-              <h3>Infrastructure</h3>
+            <h3>Remote Access</h3>
 
-              <div class="service-tags">
-                  <span>WireGuard</span>
-                  <span>Hyper-V Guest</span>
-              </div>
+            <div class="service-tags">
+              <span>SSH :22222 - VPN ONLY</span>
+            </div>
           </div>
-      </section>
+
+          <div class="service-group">
+            <h3>Services</h3>
+
+            <div class="service-tags">
+              <span>tcpnoise</span>
+            </div>
+          </div>
+
+          <div class="service-group">
+            <h3>Infrastructure</h3>
+
+            <div class="service-tags">
+              <span>WireGuard</span>
+              <span>Hyper-V Guest</span>
+            </div>
+          </div>
+        </section>
       </main>
 
+      <!-- JUMPBOX -->
+
+      <section class="machine inventoried">
+        <div class="machine-header">
+          <div>
+            <h2>Jumpbox</h2>
+            <span class="role">Break-glass / emergency access VM</span>
+          </div>
+
+          <span class="inventory-status">Inventoried</span>
+        </div>
+
+        <div class="addresses">
+          <div>
+            <span class="label">WG IPv4</span>
+            <code>10.99.0.11</code>
+          </div>
+
+          <div>
+            <span class="label">WG IPv6</span>
+            <code>fd42:42:42::11</code>
+          </div>
+
+          <div>
+            <span class="label">Private IPv4</span>
+            <code>192.168.200.11</code>
+          </div>
+        </div>
+
+        <div class="service-group">
+          <h3>Emergency Access</h3>
+
+          <div class="service-links">
+            <a href="ssh://jump.kgivler.com:22222">jump.kgivler.com:22222</a>
+          </div>
+        </div>
+
+        <div class="service-group">
+          <h3>Services</h3>
+
+          <div class="service-tags">
+            <span>SSH :22</span>
+            <span>WireGuard</span>
+            <span>PF firewall</span>
+            <span>Hyper-V Guest</span>
+          </div>
+        </div>
+
+        <div class="service-group">
+          <h3>Purpose</h3>
+
+          <div class="service-tags">
+            <span>External break-glass login</span>
+            <span>VPN jump host</span>
+          </div>
+        </div>
+      </section>
+
       <footer>
-        11 WireGuard peers documented &middot; 10 currently inventoried
+        12 WireGuard peers documented &middot; 12 currently inventoried
       </footer>
     </div>
   </body>
