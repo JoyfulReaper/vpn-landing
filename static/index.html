@@ -1,599 +1,645 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>VPN Landing</title>
 
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css" />
     <script src="/app.js" defer></script>
-</head>
+  </head>
 
-<body>
-
-<div class="container">
-
-    <header class="page-header">
+  <body>
+    <div class="container">
+      <header class="page-header">
         <div>
-            <h1>VPN Landing</h1>
-            <p>Machines and services available across the WireGuard network.</p>
+          <h1>VPN Landing</h1>
+          <p>Machines and services available across the WireGuard network.</p>
         </div>
 
         <div class="network">
-            <span>10.99.0.0/24</span>
-            <span>fd42:42:42::/64</span>
+          <span>10.99.0.0/24</span>
+          <span>fd42:42:42::/64</span>
         </div>
-    </header>
+      </header>
 
-    <main class="grid">
-
-	<!-- USEFUL LINKS -->
+      <main class="grid">
+        <!-- USEFUL LINKS -->
 
         <section class="machine inventoried">
-            <div class="machine-header">
-                <div>
-                    <h2>Useful Links</h2>
-                    <span class="role">Quick reference & portal links</span>
-                </div>
+          <div class="machine-header">
+            <div>
+              <h2>Useful Links</h2>
+              <span class="role">Quick reference & portal links</span>
             </div>
+          </div>
 
-            <div class="service-group">
-                <h3>Search Engines</h3>
+          <div class="service-group">
+            <h3>Search Engines</h3>
 
-                <div class="service-links">
-                    <a href="https://www.google.com" target="_blank" rel="noopener">Google</a>
-                    <a href="https://duckduckgo.com" target="_blank" rel="noopener">DuckDuckGo</a>
-                    <a href="https://www.bing.com" target="_blank" rel="noopener">Bing</a>
-                </div>
+            <div class="service-links">
+              <a href="https://www.google.com" target="_blank" rel="noopener"
+                >Google</a
+              >
+              <a href="https://duckduckgo.com" target="_blank" rel="noopener"
+                >DuckDuckGo</a
+              >
+              <a href="https://www.bing.com" target="_blank" rel="noopener"
+                >Bing</a
+              >
             </div>
+          </div>
 
-            <div class="service-group">
-                <h3>Portals & Hosting</h3>
+          <div class="service-group">
+            <h3>Portals & Hosting</h3>
 
-                <div class="service-links">
-                    <a href="https://github.com/joyfulreaper" target="_blank" rel="noopener">GitHub</a>
-                    <a href="https://cp.green.cloud/dashboard" target="_blank" rel="noopener">GreenCloud</a>
-                    <a href="https://dash.cloudflare.com/" target="_blank" rel="noopener">Cloudflare</a>
-                </div>
+            <div class="service-links">
+              <a
+                href="https://github.com/joyfulreaper"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+              <a
+                href="https://cp.green.cloud/dashboard"
+                target="_blank"
+                rel="noopener"
+                >GreenCloud</a
+              >
+              <a
+                href="https://dash.cloudflare.com/"
+                target="_blank"
+                rel="noopener"
+                >Cloudflare</a
+              >
             </div>
+          </div>
 
-            <div class="service-group">
-                <h3>Documentation & Reference</h3>
+          <div class="service-group">
+            <h3>Documentation & Reference</h3>
 
-                <div class="service-links secondary">
-                    <a href="https://cppreference.com/" target="_blank" rel="noopener">cppreference</a>
-                    <a href="https://tmuxcheatsheet.com/" target="_blank" rel="noopener">tmux Cheatsheet</a>
-                    <a href="https://archlinux.org/" target="_blank" rel="noopener">Arch Linux</a>
-                    <a href="https://www.freebsd.org/" target="_blank" rel="noopener">FreeBSD</a>
-                    <a href="https://docs.nats.io/" target="_blank" rel="noopener">NATS Docs</a>
-                    <a href="https://htmx.org/" target="_blank" rel="noopener">htmx</a>
-                    <a href="https://harmony.pardeike.net/v2/articles/intro.html" target="_blank" rel="noopener">Harmony Docs</a>
-                </div>
+            <div class="service-links secondary">
+              <a href="https://cppreference.com/" target="_blank" rel="noopener"
+                >cppreference</a
+              >
+              <a
+                href="https://tmuxcheatsheet.com/"
+                target="_blank"
+                rel="noopener"
+                >tmux Cheatsheet</a
+              >
+              <a href="https://archlinux.org/" target="_blank" rel="noopener"
+                >Arch Linux</a
+              >
+              <a href="https://www.freebsd.org/" target="_blank" rel="noopener"
+                >FreeBSD</a
+              >
+              <a href="https://docs.nats.io/" target="_blank" rel="noopener"
+                >NATS Docs</a
+              >
+              <a href="https://htmx.org/" target="_blank" rel="noopener"
+                >htmx</a
+              >
+              <a
+                href="https://harmony.pardeike.net/v2/articles/intro.html"
+                target="_blank"
+                rel="noopener"
+                >Harmony Docs</a
+              >
             </div>
+          </div>
         </section>
         <!-- CLANKER -->
 
         <section class="machine inventoried">
-            <div class="machine-header">
-                <div>
-                    <h2>Clanker</h2>
-                    <span class="role">Primary VPS / WireGuard hub</span>
-                </div>
-
-                <span class="inventory-status">Inventoried</span>
+          <div class="machine-header">
+            <div>
+              <h2>Clanker</h2>
+              <span class="role">Primary VPS / WireGuard hub</span>
             </div>
 
-            <div class="addresses">
-                <div>
-                    <span class="label">WG IPv4</span>
-                    <code>10.99.0.1</code>
-                </div>
+            <span class="inventory-status">Inventoried</span>
+          </div>
 
-                <div>
-                    <span class="label">WG IPv6</span>
-                    <code>fd42:42:42::1</code>
-                </div>
-
-                <div>
-                    <span class="label">Public IPv4</span>
-                    <code>142.4.38.224</code>
-                </div>
+          <div class="addresses">
+            <div>
+              <span class="label">WG IPv4</span>
+              <code>10.99.0.1</code>
             </div>
 
-            <details class="extra-addresses">
-                <summary>Public IPv6 addresses</summary>
-
-                <code>2607:f2d8:8416:10c1::bad:1dea</code>
-                <code>2607:f2d8:8416:10c1::dead</code>
-                <code>2607:f2d8:8416:10c1::99</code>
-                <code>2607:f2d8:8416:10c1::a</code>
-            </details>
-
-            <div class="service-group">
-                <h3>Public</h3>
-
-                <div class="service-links">
-                    <a href="https://randomsteam.kgivler.com">Random Steam</a>
-                    <a href="https://randomgit.kgivler.com">Random GitHub</a>
-                    <a href="https://dashboard.kgivler.com">Mission Control Dashboard</a>
-                    <a href="https://beszel.kgivler.com">Beszel</a>
-                    <a href="https://ntfy.kgivler.com">ntfy</a>
-                    <a href="https://wsiwot.kgivler.com">WSIWOT</a>
-                    <a href="https://tools.kgivler.com">IT-Tools</a>
-                </div>
+            <div>
+              <span class="label">WG IPv6</span>
+              <code>fd42:42:42::1</code>
             </div>
 
-            <div class="service-group">
-                <h3>VPN / Admin</h3>
-
-                <div class="service-links">
-                    <a href="http://10.99.0.1:8088">Dozzle</a>
-                    <a href="http://10.99.0.1:5001">Dockge</a>
-                    <a href="http://10.99.0.1:8222">NATS Monitoring</a>
-                </div>
+            <div>
+              <span class="label">Public IPv4</span>
+              <code>142.4.38.224</code>
             </div>
+          </div>
 
-            <div class="service-group">
-                <h3>APIs</h3>
+          <details class="extra-addresses">
+            <summary>Public IPv6 addresses</summary>
 
-                <div class="service-links secondary">
-                    <a href="https://missioncontrol.kgivler.com">Mission Control Gateway</a>
-                    <a href="https://status-api.kgivler.com">Status API</a>
-                    <a href="https://gitactivity.kgivler.com">Git Activity</a>
-                    <a href="https://qotd-api.kgivler.com">QOTD API</a>
-                </div>
+            <code>2607:f2d8:8416:10c1::bad:1dea</code>
+            <code>2607:f2d8:8416:10c1::dead</code>
+            <code>2607:f2d8:8416:10c1::99</code>
+            <code>2607:f2d8:8416:10c1::a</code>
+          </details>
+
+          <div class="service-group">
+            <h3>Public</h3>
+
+            <div class="service-links">
+              <a href="https://randomsteam.kgivler.com">Random Steam</a>
+              <a href="https://randomgit.kgivler.com">Random GitHub</a>
+              <a href="https://dashboard.kgivler.com"
+                >Mission Control Dashboard</a
+              >
+              <a href="https://beszel.kgivler.com">Beszel</a>
+              <a href="https://ntfy.kgivler.com">ntfy</a>
+              <a href="https://wsiwot.kgivler.com">WSIWOT</a>
+              <a href="https://tools.kgivler.com">IT-Tools</a>
             </div>
+          </div>
 
-            <div class="service-group">
-                <h3>Protocols / Services</h3>
+          <div class="service-group">
+            <h3>VPN / Admin</h3>
 
-                <div class="service-tags">
-                    <span>SSH :22</span>
-                    <span>Gopher :70</span>
-                    <span>Gemini :1965</span>
-                    <span>Echo :7</span>
-                    <span>Discard :9</span>
-                    <span>Daytime :13</span>
-                    <span>QOTD :17</span>
-                    <span>Finger :79</span>
-                    <span>tcpnoise</span>
-                </div>
+            <div class="service-links">
+              <a href="http://10.99.0.1:8088">Dozzle</a>
+              <a href="http://10.99.0.1:5001">Dockge</a>
+              <a href="http://10.99.0.1:8222">NATS Monitoring</a>
             </div>
+          </div>
+
+          <div class="service-group">
+            <h3>APIs</h3>
+
+            <div class="service-links secondary">
+              <a href="https://missioncontrol.kgivler.com"
+                >Mission Control Gateway</a
+              >
+              <a href="https://status-api.kgivler.com">Status API</a>
+              <a href="https://gitactivity.kgivler.com">Git Activity</a>
+              <a href="https://qotd-api.kgivler.com">QOTD API</a>
+            </div>
+          </div>
+
+          <div class="service-group">
+            <h3>Protocols / Services</h3>
+
+            <div class="service-tags">
+              <span>SSH :22</span>
+              <span>Gopher :70</span>
+              <span>Gemini :1965</span>
+              <span>Echo :7</span>
+              <span>Discard :9</span>
+              <span>Daytime :13</span>
+              <span>QOTD :17</span>
+              <span>Finger :79</span>
+              <span>tcpnoise</span>
+            </div>
+          </div>
         </section>
-
 
         <!-- SCOPECREEP -->
 
         <section class="machine inventoried">
-            <div class="machine-header">
-                <div>
-                    <h2>ScopeCreep</h2>
-                    <span class="role">Secondary VPS / tcpnoise sensor</span>
-                </div>
-
-                <span class="inventory-status">Inventoried</span>
+          <div class="machine-header">
+            <div>
+              <h2>ScopeCreep</h2>
+              <span class="role">Secondary VPS / tcpnoise sensor</span>
             </div>
 
-            <div class="addresses">
-                <div>
-                    <span class="label">WG IPv4</span>
-                    <code>10.99.0.9</code>
-                </div>
+            <span class="inventory-status">Inventoried</span>
+          </div>
 
-                <div>
-                    <span class="label">WG IPv6</span>
-                    <code>fd42:42:42::9</code>
-                </div>
-
-                <div>
-                    <span class="label">Public IPv4</span>
-                    <code>173.249.205.171</code>
-                </div>
+          <div class="addresses">
+            <div>
+              <span class="label">WG IPv4</span>
+              <code>10.99.0.9</code>
             </div>
 
-            <details class="extra-addresses">
-                <summary>Public IPv6 addresses</summary>
-
-                <code>2607:9000:700:1063:b1ee:d:c0ff:ee</code>
-                <code>2607:9000:700:1063::a</code>
-            </details>
-
-            <div class="service-group">
-                <h3>VPN / Admin</h3>
-
-                <div class="service-links">
-                    <a href="http://10.99.0.9:5001">Dockge</a>
-                </div>
+            <div>
+              <span class="label">WG IPv6</span>
+              <code>fd42:42:42::9</code>
             </div>
 
-            <div class="service-group">
-                <h3>Agents</h3>
-
-                <div class="service-tags">
-                    <span>Dozzle Agent :7007</span>
-                    <span>Beszel Agent</span>
-                </div>
+            <div>
+              <span class="label">Public IPv4</span>
+              <code>173.249.205.171</code>
             </div>
+          </div>
 
-            <div class="service-group">
-                <h3>Protocols / Services</h3>
+          <details class="extra-addresses">
+            <summary>Public IPv6 addresses</summary>
 
-                <div class="service-tags">
-                    <span>SSH :22</span>
-                    <span>tcpnoise</span>
-                </div>
+            <code>2607:9000:700:1063:b1ee:d:c0ff:ee</code>
+            <code>2607:9000:700:1063::a</code>
+          </details>
+
+          <div class="service-group">
+            <h3>VPN / Admin</h3>
+
+            <div class="service-links">
+              <a href="http://10.99.0.9:5001">Dockge</a>
             </div>
+          </div>
+
+          <div class="service-group">
+            <h3>Agents</h3>
+
+            <div class="service-tags">
+              <span>Dozzle Agent :7007</span>
+              <span>Beszel Agent</span>
+            </div>
+          </div>
+
+          <div class="service-group">
+            <h3>Protocols / Services</h3>
+
+            <div class="service-tags">
+              <span>SSH :22</span>
+              <span>tcpnoise</span>
+            </div>
+          </div>
         </section>
-
 
         <!-- MOLASSES -->
 
         <section class="machine inventoried">
-            <div class="machine-header">
-                <div>
-                    <h2>Molasses</h2>
-                    <span class="role">Home infrastructure server</span>
-                </div>
-
-                <span class="inventory-status">Inventoried</span>
+          <div class="machine-header">
+            <div>
+              <h2>Molasses</h2>
+              <span class="role">Home infrastructure server</span>
             </div>
 
-            <div class="addresses">
-                <div>
-                    <span class="label">WG IPv4</span>
-                    <code>10.99.0.10</code>
-                </div>
+            <span class="inventory-status">Inventoried</span>
+          </div>
 
-                <div>
-                    <span class="label">WG IPv6</span>
-                    <code>fd42:42:42::10</code>
-                </div>
-
-                <div>
-                    <span class="label">LAN IPv4</span>
-                    <code>192.168.1.5</code>
-                </div>
-
-                <div>
-                    <span class="label">Routed IPv6</span>
-                    <code>2607:f2d8:8416:10c1::10</code>
-                </div>
+          <div class="addresses">
+            <div>
+              <span class="label">WG IPv4</span>
+              <code>10.99.0.10</code>
             </div>
 
-            <div class="service-group">
-                <h3>Web</h3>
-
-                <div class="service-links">
-                    <a href="http://10.99.0.10/admin/">Pi-hole</a>
-                    <a href="http://10.99.0.10:3000">PairDrop</a>
-                    <a href="http://10.99.0.10:8082">Scrutiny</a>
-                    <a href="http://10.99.0.10:20211">NetAlertX</a>
-                    <a href="http://10.99.0.10:5001">Dockge</a>
-                    <a href="https://uptime.kgivler.com">Uptime Kuma</a>
-                    <a href="https://chat.kgivler.com">The Lounge</a>
-                </div>
+            <div>
+              <span class="label">WG IPv6</span>
+              <code>fd42:42:42::10</code>
             </div>
 
-            <div class="service-group">
-                <h3>Infrastructure</h3>
-
-                <div class="service-tags">
-                    <span>Pi-hole DNS :53</span>
-                    <span>Unbound :5335</span>
-                    <span>SSH :22</span>
-                    <span>NetAlertX GraphQL :20214</span>
-                </div>
+            <div>
+              <span class="label">LAN IPv4</span>
+              <code>192.168.1.5</code>
             </div>
 
-            <div class="service-group">
-                <h3>Agents</h3>
-
-                <div class="service-tags">
-                    <span>Dozzle Agent :7007</span>
-                    <span>Beszel Agent</span>
-                </div>
+            <div>
+              <span class="label">Routed IPv6</span>
+              <code>2607:f2d8:8416:10c1::10</code>
             </div>
+          </div>
+
+          <div class="service-group">
+            <h3>Web</h3>
+
+            <div class="service-links">
+              <a href="http://10.99.0.10/admin/">Pi-hole</a>
+              <a href="http://10.99.0.10:3000">PairDrop</a>
+              <a href="http://10.99.0.10:8082">Scrutiny</a>
+              <a href="http://10.99.0.10:20211">NetAlertX</a>
+              <a href="http://10.99.0.10:5001">Dockge</a>
+              <a href="https://uptime.kgivler.com">Uptime Kuma</a>
+              <a href="https://chat.kgivler.com">The Lounge</a>
+            </div>
+          </div>
+
+          <div class="service-group">
+            <h3>Infrastructure</h3>
+
+            <div class="service-tags">
+              <span>Pi-hole DNS :53</span>
+              <span>Unbound :5335</span>
+              <span>SSH :22</span>
+              <span>NetAlertX GraphQL :20214</span>
+            </div>
+          </div>
+
+          <div class="service-group">
+            <h3>Agents</h3>
+
+            <div class="service-tags">
+              <span>Dozzle Agent :7007</span>
+              <span>Beszel Agent</span>
+            </div>
+          </div>
         </section>
-
 
         <!-- RYZENSHINE -->
 
         <section class="machine inventoried">
-            <div class="machine-header">
-                <div>
-                    <h2>RyzenShine</h2>
-                    <span class="role">Windows workstation</span>
-                </div>
-
-                <span class="inventory-status">Inventoried</span>
+          <div class="machine-header">
+            <div>
+              <h2>RyzenShine</h2>
+              <span class="role">Windows workstation</span>
             </div>
 
-            <div class="addresses">
-                <div>
-                    <span class="label">WG IPv4</span>
-                    <code>10.99.0.2</code>
-                </div>
+            <span class="inventory-status">Inventoried</span>
+          </div>
 
-                <div>
-                    <span class="label">WG IPv6</span>
-                    <code>fd42:42:42::dead:c0de</code>
-                </div>
-
-                <div>
-                    <span class="label">LAN IPv4</span>
-                    <code>192.168.1.2</code>
-                </div>
-
-                <div>
-                    <span class="label">Routed IPv6</span>
-                    <code>2607:f2d8:8416:10c1::dead:c0de</code>
-                </div>
+          <div class="addresses">
+            <div>
+              <span class="label">WG IPv4</span>
+              <code>10.99.0.2</code>
             </div>
 
-            <div class="service-group">
-                <h3>Public</h3>
-
-                <div class="service-links">
-                    <a href="https://kgivler.com">kgivler.com</a>
-                    <a href="https://api.kgivler.com">kgivler API</a>
-                    <a href="https://randombeta.kgivler.com">Random Steam Beta</a>
-                </div>
+            <div>
+              <span class="label">WG IPv6</span>
+              <code>fd42:42:42::dead:c0de</code>
             </div>
 
-            <div class="service-group">
-                <h3>Services</h3>
-
-                <div class="service-tags">
-                    <span>IIS</span>
-                    <span>SMB</span>
-                    <span>Hyper-V</span>
-                    <span>qBittorrent</span>
-                </div>
+            <div>
+              <span class="label">LAN IPv4</span>
+              <code>192.168.1.2</code>
             </div>
+
+            <div>
+              <span class="label">Routed IPv6</span>
+              <code>2607:f2d8:8416:10c1::dead:c0de</code>
+            </div>
+          </div>
+
+          <div class="service-group">
+            <h3>Public</h3>
+
+            <div class="service-links">
+              <a href="https://kgivler.com">kgivler.com</a>
+              <a href="https://api.kgivler.com">kgivler API</a>
+              <a href="https://randombeta.kgivler.com">Random Steam Beta</a>
+            </div>
+          </div>
+
+          <div class="service-group">
+            <h3>Services</h3>
+
+            <div class="service-tags">
+              <span>IIS</span>
+              <span>SMB</span>
+              <span>Hyper-V</span>
+              <span>qBittorrent</span>
+            </div>
+          </div>
         </section>
-
 
         <!-- ANDROID -->
 
         <section class="machine pending">
-            <div class="machine-header">
-                <div>
-                    <h2>Android Phone</h2>
-                    <span class="role">Mobile WireGuard peer</span>
-                </div>
-
-                <span class="inventory-status">Pending</span>
+          <div class="machine-header">
+            <div>
+              <h2>Android Phone</h2>
+              <span class="role">Mobile WireGuard peer</span>
             </div>
 
-            <div class="addresses">
-                <div>
-                    <span class="label">WG IPv4</span>
-                    <code>10.99.0.3</code>
-                </div>
+            <span class="inventory-status">Pending</span>
+          </div>
 
-                <div>
-                    <span class="label">WG IPv6</span>
-                    <code>fd42:42:42::ca11:ce11</code>
-                </div>
+          <div class="addresses">
+            <div>
+              <span class="label">WG IPv4</span>
+              <code>10.99.0.3</code>
             </div>
 
-            <p class="inventory-note">No services inventoried yet.</p>
+            <div>
+              <span class="label">WG IPv6</span>
+              <code>fd42:42:42::ca11:ce11</code>
+            </div>
+          </div>
+
+          <p class="inventory-note">No services inventoried yet.</p>
         </section>
-
 
         <!-- FREEBSD WORKSTATION -->
 
-        <section class="machine pending">
-            <div class="machine-header">
-                <div>
-                    <h2>FreeBSD Workstation VM</h2>
-                    <span class="role">Workstation VM</span>
-                </div>
-
-                <span class="inventory-status">Pending</span>
+        <section class="machine inventoried">
+          <div class="machine-header">
+            <div>
+              <h2>FreeBSD Workstation VM</h2>
+              <span class="role">Development / experimentation VM</span>
             </div>
 
-            <div class="addresses">
-                <div>
-                    <span class="label">WG IPv4</span>
-                    <code>10.99.0.4</code>
-                </div>
+            <span class="inventory-status">Inventoried</span>
+          </div>
 
-                <div>
-                    <span class="label">WG IPv6</span>
-                    <code>fd42:42:42::f2ee:b5d</code>
-                </div>
-
-                <div>
-                    <span class="label">Routed IPv6</span>
-                    <code>2607:f2d8:8416:10c1::f2ee:b5d</code>
-                </div>
+          <div class="addresses">
+            <div>
+              <span class="label">WG IPv4</span>
+              <code>10.99.0.4</code>
             </div>
 
-            <p class="inventory-note">Inventory pending.</p>
+            <div>
+              <span class="label">WG IPv6</span>
+              <code>fd42:42:42::f2ee:b5d</code>
+            </div>
+
+            <div>
+              <span class="label">Routed IPv6</span>
+              <code>2607:f2d8:8416:10c1::f2ee:b5d</code>
+            </div>
+          </div>
+
+          <div class="service-group">
+            <h3>Remote Access</h3>
+
+            <div class="service-tags">
+              <span>SSH :22 — VPN only</span>
+              <span>RDP / xrdp :3389 — VPN only</span>
+            </div>
+          </div>
+
+          <div class="service-group">
+            <h3>Infrastructure</h3>
+
+            <div class="service-tags">
+              <span>WireGuard</span>
+              <span>PF firewall</span>
+              <span>syslog :514 UDP — VPN only</span>
+            </div>
+          </div>
         </section>
-
 
         <!-- ARCH WORKSTATION -->
 
         <section class="machine pending">
-            <div class="machine-header">
-                <div>
-                    <h2>Arch Workstation VM</h2>
-                    <span class="role">Workstation VM</span>
-                </div>
-
-                <span class="inventory-status">Pending</span>
+          <div class="machine-header">
+            <div>
+              <h2>Arch Workstation VM</h2>
+              <span class="role">Workstation VM</span>
             </div>
 
-            <div class="addresses">
-                <div>
-                    <span class="label">WG IPv4</span>
-                    <code>10.99.0.5</code>
-                </div>
+            <span class="inventory-status">Pending</span>
+          </div>
 
-                <div>
-                    <span class="label">WG IPv6</span>
-                    <code>fd42:42:42::bad:c0de</code>
-                </div>
-
-                <div>
-                    <span class="label">Routed IPv6</span>
-                    <code>2607:f2d8:8416:10c1::bad:c0de</code>
-                </div>
+          <div class="addresses">
+            <div>
+              <span class="label">WG IPv4</span>
+              <code>10.99.0.5</code>
             </div>
 
-            <p class="inventory-note">Inventory pending.</p>
+            <div>
+              <span class="label">WG IPv6</span>
+              <code>fd42:42:42::bad:c0de</code>
+            </div>
+
+            <div>
+              <span class="label">Routed IPv6</span>
+              <code>2607:f2d8:8416:10c1::bad:c0de</code>
+            </div>
+          </div>
+
+          <p class="inventory-note">Inventory pending.</p>
         </section>
-
 
         <!-- I5 LAPTOP -->
 
         <section class="machine pending">
-            <div class="machine-header">
-                <div>
-                    <h2>i5 Laptop</h2>
-                    <span class="role">Windows laptop</span>
-                </div>
-
-                <span class="inventory-status">Pending</span>
+          <div class="machine-header">
+            <div>
+              <h2>i5 Laptop</h2>
+              <span class="role">Windows laptop</span>
             </div>
 
-            <div class="addresses">
-                <div>
-                    <span class="label">WG IPv4</span>
-                    <code>10.99.0.6</code>
-                </div>
+            <span class="inventory-status">Pending</span>
+          </div>
 
-                <div>
-                    <span class="label">WG IPv6</span>
-                    <code>fd42:42:42::5ad:b10b</code>
-                </div>
-
-                <div>
-                    <span class="label">Routed IPv6</span>
-                    <code>2607:f2d8:8416:10c1::5ad:b10b</code>
-                </div>
+          <div class="addresses">
+            <div>
+              <span class="label">WG IPv4</span>
+              <code>10.99.0.6</code>
             </div>
 
-            <p class="inventory-note">Inventory pending.</p>
+            <div>
+              <span class="label">WG IPv6</span>
+              <code>fd42:42:42::5ad:b10b</code>
+            </div>
+
+            <div>
+              <span class="label">Routed IPv6</span>
+              <code>2607:f2d8:8416:10c1::5ad:b10b</code>
+            </div>
+          </div>
+
+          <p class="inventory-note">Inventory pending.</p>
         </section>
-
 
         <!-- FREEBSD LAPTOP -->
 
         <section class="machine pending">
-            <div class="machine-header">
-                <div>
-                    <h2>FreeBSD Laptop VM</h2>
-                    <span class="role">Laptop VM</span>
-                </div>
-
-                <span class="inventory-status">Pending</span>
+          <div class="machine-header">
+            <div>
+              <h2>FreeBSD Laptop VM</h2>
+              <span class="role">Laptop VM</span>
             </div>
 
-            <div class="addresses">
-                <div>
-                    <span class="label">WG IPv4</span>
-                    <code>10.99.0.7</code>
-                </div>
+            <span class="inventory-status">Pending</span>
+          </div>
 
-                <div>
-                    <span class="label">WG IPv6</span>
-                    <code>fd42:42:42::b5d:b10b</code>
-                </div>
-
-                <div>
-                    <span class="label">Routed IPv6</span>
-                    <code>2607:f2d8:8416:10c1::b5d:b10b</code>
-                </div>
+          <div class="addresses">
+            <div>
+              <span class="label">WG IPv4</span>
+              <code>10.99.0.7</code>
             </div>
 
-            <p class="inventory-note">Inventory pending.</p>
+            <div>
+              <span class="label">WG IPv6</span>
+              <code>fd42:42:42::b5d:b10b</code>
+            </div>
+
+            <div>
+              <span class="label">Routed IPv6</span>
+              <code>2607:f2d8:8416:10c1::b5d:b10b</code>
+            </div>
+          </div>
+
+          <p class="inventory-note">Inventory pending.</p>
         </section>
-
 
         <!-- ARCH LAPTOP -->
 
         <section class="machine pending">
-            <div class="machine-header">
-                <div>
-                    <h2>Arch Laptop VM</h2>
-                    <span class="role">Laptop VM</span>
-                </div>
-
-                <span class="inventory-status">Pending</span>
+          <div class="machine-header">
+            <div>
+              <h2>Arch Laptop VM</h2>
+              <span class="role">Laptop VM</span>
             </div>
 
-            <div class="addresses">
-                <div>
-                    <span class="label">WG IPv4</span>
-                    <code>10.99.0.8</code>
-                </div>
+            <span class="inventory-status">Pending</span>
+          </div>
 
-                <div>
-                    <span class="label">WG IPv6</span>
-                    <code>fd42:42:42::b10b</code>
-                </div>
-
-                <div>
-                    <span class="label">Routed IPv6</span>
-                    <code>2607:f2d8:8416:10c1::b10b</code>
-                </div>
+          <div class="addresses">
+            <div>
+              <span class="label">WG IPv4</span>
+              <code>10.99.0.8</code>
             </div>
 
-            <p class="inventory-note">Inventory pending.</p>
+            <div>
+              <span class="label">WG IPv6</span>
+              <code>fd42:42:42::b10b</code>
+            </div>
+
+            <div>
+              <span class="label">Routed IPv6</span>
+              <code>2607:f2d8:8416:10c1::b10b</code>
+            </div>
+          </div>
+
+          <p class="inventory-note">Inventory pending.</p>
         </section>
-
 
         <!-- NOISEMAKER -->
 
         <section class="machine pending">
-            <div class="machine-header">
-                <div>
-                    <h2>Noisemaker</h2>
-                    <span class="role">tcpnoise residential collector</span>
-                </div>
-
-                <span class="inventory-status">Pending</span>
+          <div class="machine-header">
+            <div>
+              <h2>Noisemaker</h2>
+              <span class="role">tcpnoise residential collector</span>
             </div>
 
-            <div class="addresses">
-                <div>
-                    <span class="label">WG IPv4</span>
-                    <code>10.99.0.12</code>
-                </div>
+            <span class="inventory-status">Pending</span>
+          </div>
 
-                <div>
-                    <span class="label">WG IPv6</span>
-                    <code>fd42:42:42::12</code>
-                </div>
-
-                <div>
-                    <span class="label">Routed IPv6</span>
-                    <code>2607:f2d8:8416:10c1::12</code>
-                </div>
+          <div class="addresses">
+            <div>
+              <span class="label">WG IPv4</span>
+              <code>10.99.0.12</code>
             </div>
 
-            <div class="service-group">
-                <h3>Known</h3>
-
-                <div class="service-tags">
-                    <span>tcpnoise</span>
-                </div>
+            <div>
+              <span class="label">WG IPv6</span>
+              <code>fd42:42:42::12</code>
             </div>
 
-            <p class="inventory-note">Full inventory pending.</p>
+            <div>
+              <span class="label">Routed IPv6</span>
+              <code>2607:f2d8:8416:10c1::12</code>
+            </div>
+          </div>
+
+          <div class="service-group">
+            <h3>Known</h3>
+
+            <div class="service-tags">
+              <span>tcpnoise</span>
+            </div>
+          </div>
+
+          <p class="inventory-note">Full inventory pending.</p>
         </section>
+      </main>
 
-    </main>
-
-    <footer>
+      <footer>
         11 WireGuard peers documented &middot; 4 currently inventoried
-    </footer>
-
-</div>
-
-</body>
+      </footer>
+    </div>
+  </body>
 </html>
