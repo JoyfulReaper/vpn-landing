@@ -612,34 +612,49 @@
 
         <!-- ARCH LAPTOP -->
 
-        <section class="machine pending">
-          <div class="machine-header">
-            <div>
-              <h2>Arch Laptop VM</h2>
-              <span class="role">Laptop VM</span>
+        <section class="machine inventoried">
+            <div class="machine-header">
+                <div>
+                    <h2>Arch Laptop VM</h2>
+                    <span class="role">Development / experimentation VM</span>
+                </div>
+
+                <span class="inventory-status">Inventoried</span>
             </div>
 
-            <span class="inventory-status">Pending</span>
-          </div>
+            <div class="addresses">
+                <div>
+                    <span class="label">WG IPv4</span>
+                    <code>10.99.0.8</code>
+                </div>
 
-          <div class="addresses">
-            <div>
-              <span class="label">WG IPv4</span>
-              <code>10.99.0.8</code>
+                <div>
+                    <span class="label">WG IPv6</span>
+                    <code>fd42:42:42::b10b</code>
+                </div>
+
+                <div>
+                    <span class="label">Routed IPv6</span>
+                    <code>2607:f2d8:8416:10c1::b10b</code>
+                </div>
             </div>
 
-            <div>
-              <span class="label">WG IPv6</span>
-              <code>fd42:42:42::b10b</code>
+            <div class="service-group">
+                <h3>Remote Access</h3>
+
+                <div class="service-tags">
+                    <span>SSH :22 — VPN only</span>
+                </div>
             </div>
 
-            <div>
-              <span class="label">Routed IPv6</span>
-              <code>2607:f2d8:8416:10c1::b10b</code>
-            </div>
-          </div>
+            <div class="service-group">
+                <h3>Infrastructure</h3>
 
-          <p class="inventory-note">Inventory pending.</p>
+                <div class="service-tags">
+                    <span>WireGuard</span>
+                    <span>VirtualBox Guest</span>
+                </div>
+            </div>
         </section>
 
         <!-- NOISEMAKER -->
