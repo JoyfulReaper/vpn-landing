@@ -338,59 +338,70 @@
 
         <!-- RYZENSHINE -->
 
-        <section class="machine inventoried">
-          <div class="machine-header">
-            <div>
-              <h2>RyzenShine</h2>
-              <span class="role">Windows workstation</span>
-            </div>
+		<section class="machine inventoried">
+		  <div class="machine-header">
+			<div>
+			  <h2>RyzenShine</h2>
+			  <span class="role">Windows workstation / Hyper-V host</span>
+			</div>
 
-            <span class="inventory-status">Inventoried</span>
-          </div>
+			<span class="inventory-status">Inventoried</span>
+		  </div>
 
-          <div class="addresses">
-            <div>
-              <span class="label">WG IPv4</span>
-              <code>10.99.0.2</code>
-            </div>
+		  <div class="addresses">
+			<div>
+			  <span class="label">WG IPv4</span>
+			  <code>10.99.0.2</code>
+			</div>
 
-            <div>
-              <span class="label">WG IPv6</span>
-              <code>fd42:42:42::dead:c0de</code>
-            </div>
+			<div>
+			  <span class="label">WG IPv6</span>
+			  <code>fd42:42:42::dead:c0de</code>
+			</div>
 
-            <div>
-              <span class="label">LAN IPv4</span>
-              <code>192.168.1.2</code>
-            </div>
+			<div>
+			  <span class="label">LAN IPv4</span>
+			  <code>192.168.1.2</code>
+			</div>
 
-            <div>
-              <span class="label">Routed IPv6</span>
-              <code>2607:f2d8:8416:10c1::dead:c0de</code>
-            </div>
-          </div>
+			<div>
+			  <span class="label">Routed IPv6</span>
+			  <code>2607:f2d8:8416:10c1::dead:c0de</code>
+			</div>
+		  </div>
 
-          <div class="service-group">
-            <h3>Public</h3>
+		  <div class="service-group">
+			<h3>Public</h3>
 
-            <div class="service-links">
-              <a href="https://kgivler.com">kgivler.com</a>
-              <a href="https://api.kgivler.com">kgivler API</a>
-              <a href="https://randombeta.kgivler.com">Random Steam Beta</a>
-            </div>
-          </div>
+			<div class="service-links">
+			  <a href="https://kgivler.com">kgivler.com</a>
+			  <a href="https://api.kgivler.com">kgivler API</a>
+			  <a href="https://randombeta.kgivler.com">Random Steam Beta</a>
+			</div>
+		  </div>
 
-          <div class="service-group">
-            <h3>Services</h3>
+		  <div class="service-group">
+			<h3>Services</h3>
 
-            <div class="service-tags">
-              <span>IIS</span>
-              <span>SMB</span>
-              <span>Hyper-V</span>
-              <span>qBittorrent</span>
-            </div>
-          </div>
-        </section>
+			<div class="service-tags">
+			  <span>IIS</span>
+			  <span>SMB</span>
+			  <span>Hyper-V</span>
+			  <span>qBittorrent</span>
+			</div>
+		  </div>
+
+		  <div class="service-group">
+			<h3>Hyper-V Networking</h3>
+
+			<div class="service-tags">
+			  <span>Default Switch — ArchLinux + FreeBSD</span>
+			  <span>FreeBSD-NAT — Jumpbox + Noisemaker</span>
+			  <span>WinNAT — 192.168.200.0/24</span>
+			  <span>Noisemaker public ports forwarded through WinNAT</span>
+			</div>
+		  </div>
+		</section>
 
         <!-- ANDROID -->
 
@@ -666,63 +677,66 @@
 
         <!-- NOISEMAKER -->
 
-        <section class="machine inventoried">
-          <div class="machine-header">
-            <div>
-              <h2>Noisemaker</h2>
-              <span class="role">tcpnoise residential collector</span>
-            </div>
+		<section class="machine inventoried">
+		  <div class="machine-header">
+			<div>
+			  <h2>Noisemaker</h2>
+			  <span class="role">tcpnoise residential collector</span>
+			</div>
 
-            <span class="inventory-status">Inventoried</span>
-          </div>
+			<span class="inventory-status">Inventoried</span>
+		  </div>
 
-          <div class="addresses">
-            <div>
-              <span class="label">WG IPv4</span>
-              <code>10.99.0.12</code>
-            </div>
+		  <div class="addresses">
+			<div>
+			  <span class="label">WG IPv4</span>
+			  <code>10.99.0.12</code>
+			</div>
 
-            <div>
-              <span class="label">WG IPv6</span>
-              <code>fd42:42:42::12</code>
-            </div>
+			<div>
+			  <span class="label">WG IPv6</span>
+			  <code>fd42:42:42::12</code>
+			</div>
 
-            <div>
-              <span class="label">LAN IPv4</span>
-              <code>192.168.1.235</code>
-            </div>
+			<div>
+			  <span class="label">Private IPv4</span>
+			  <code>192.168.200.12</code>
+			</div>
 
-            <div>
-              <span class="label">Routed IPv6</span>
-              <code>2607:f2d8:8416:10c1::12</code>
-            </div>
-          </div>
+			<div>
+			  <span class="label">Routed IPv6</span>
+			  <code>2607:f2d8:8416:10c1::12</code>
+			</div>
+		  </div>
 
-          <div class="service-group">
-            <h3>Remote Access</h3>
+		  <div class="service-group">
+			<h3>Remote Access</h3>
 
-            <div class="service-tags">
-              <span>SSH :22222 - VPN ONLY</span>
-            </div>
-          </div>
+			<div class="service-tags">
+			  <span>SSH :22222 — VPN only</span>
+			</div>
+		  </div>
 
-          <div class="service-group">
-            <h3>Services</h3>
+		  <div class="service-group">
+			<h3>Services</h3>
 
-            <div class="service-tags">
-              <span>tcpnoise</span>
-            </div>
-          </div>
+			<div class="service-tags">
+			  <span>tcpnoise</span>
+			  <span>Public bait ports via RyzenShine</span>
+			</div>
+		  </div>
 
-          <div class="service-group">
-            <h3>Infrastructure</h3>
+		  <div class="service-group">
+			<h3>Infrastructure</h3>
 
-            <div class="service-tags">
-              <span>WireGuard</span>
-              <span>Hyper-V Guest</span>
-            </div>
-          </div>
-        </section>
+			<div class="service-tags">
+			  <span>WireGuard</span>
+			  <span>Hyper-V Guest</span>
+			  <span>FreeBSD-NAT</span>
+			  <span>WinNAT port forwarding</span>
+			</div>
+		  </div>
+		</section>
 
         <!-- JUMPBOX -->
 
