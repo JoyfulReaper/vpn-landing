@@ -137,7 +137,8 @@
         <div class="service-group">
           <h3>VPN / Admin</h3>
           <div class="service-links">
-            <a href="http://10.99.0.9:5001">Dockge</a> <a href="http://10.99.0.9:8888">SearXNG</a>
+            <a href="http://10.99.0.9:5001">Dockge</a> <a href="http://10.99.0.9:8888">SearXNG</a> <a href=
+            "http://10.99.0.9:8080/admin/">Pi-hole (secondary)</a>
           </div>
         </div>
         <div class="service-group">
@@ -149,7 +150,42 @@
         <div class="service-group">
           <h3>Protocols / Services</h3>
           <div class="service-tags">
-            <span>SSH :22</span> <span>tcpnoise</span>
+            <span>SSH :22</span> <span>Pi-hole DNS :53 — home WAN only</span> <span>Unbound DNS :53 — VPN</span>
+            <span>tcpnoise</span>
+          </div>
+        </div>
+      </section><!-- WURSTCASE -->
+      <section class="machine inventoried">
+        <div class="machine-header">
+          <div>
+            <h2>Wurstcase</h2><span class="role">Frankfurt DN42 / Yggdrasil POP</span>
+          </div><span class="inventory-status">Inventoried</span>
+        </div>
+        <div class="addresses">
+          <div>
+            <span class="label">WG IPv4</span> <code>10.99.0.15</code>
+          </div>
+          <div>
+            <span class="label">WG IPv6</span> <code>fd42:42:42::15</code>
+          </div>
+          <div>
+            <span class="label">Public IPv4</span> <code>77.90.40.169</code>
+          </div>
+          <div>
+            <span class="label">Public IPv6</span> <code>2a0f:85c1:b73:7ee::a</code>
+          </div>
+        </div>
+        <div class="service-group">
+          <h3>VPN / Admin</h3>
+          <div class="service-tags">
+            <span>SSH :22 — VPN only</span> <span>Mission Control Agent :5194</span>
+            <span>BIRD Looking Glass Proxy :18000</span> <span>Beszel Agent</span>
+          </div>
+        </div>
+        <div class="service-group">
+          <h3>Routing / Overlay</h3>
+          <div class="service-tags">
+            <span>DN42 / BIRD</span> <span>Yggdrasil :54321</span> <span>Frankfurt POP</span>
           </div>
         </div>
       </section><!-- MOLASSES -->
@@ -524,7 +560,7 @@
       </section>
     </main>
     <footer>
-      13 WireGuard peers documented · 13 currently inventoried
+      14 WireGuard peers documented · 14 currently inventoried
     </footer>
   </div>
 </body>
